@@ -1,0 +1,203 @@
+.the_result {
+	text-align:left;
+	font-size:30px;
+	margin: 0 auto;
+	padding:15px 50px 15px 50px;
+}
+
+.titletitle a{
+	font-size: 14px;
+	font-weight:bold;
+}
+
+.titletitle a:link,.titletitle a:visited{
+	color:#333534;
+	text-decoration:none; 
+}
+
+.titletitle a:hover,.titletitle a:active{
+	color:#164988;
+}
+
+.zhaiyao {
+	padding-top:10px;
+	/* text-indent:2%; */
+	color:#404040;
+}
+
+
+.zhaiyao a:link{
+	color:#5b5b5b;
+	text-decoration:none; 
+}
+.zhaiyao a:visited{
+	color:#783245;
+	text-decoration:none; 
+}
+.zhaiyao a:hover,.zhaiyao a:active{
+	color:#164988;
+	text-decoration:none;
+}
+
+
+.abstraLink{
+	font-weight:bold;
+	vertical-align:top;
+	display:inline-block;
+	width:80px;	
+}
+/*
+a.grayLink:link{
+	color:#5b5b5b;
+	text-decoration:none;
+}
+a.grayLink:visited{
+	color:#783245;
+	text-decoration:none;
+}
+a.grayLink:hover, a.grayLink:active{
+	color:#164988;
+	text-decoration:none;
+}
+*/
+a.orangeLink:link{
+	color:#FF6347;
+	text-decoration:none;
+}
+a.orangeLink:visited{
+	color:#783245;
+	text-decoration:none;
+}
+a.orangeLink:hover, a.orangeLink:active{
+	color:#164988;
+	text-decoration:none;
+}
+
+a.redLink:link{
+	color:#EE0000;
+	text-decoration:none;
+}
+a.redLink:visited{
+	color:#783245;
+	text-decoration:none;
+}
+a.redLink:hover, a.redLink:active{
+	color:#164988;
+	text-decoration:none;
+}
+
+.textarea1{
+	min-width:600px;
+	height:50px;
+	disabled:disabled;
+}
+
+
+.op
+{
+	padding-top:10px;
+}
+
+.op a{
+	color:#164988;
+	margin-right:10px;
+}
+
+.op font {
+	font-size:20px;
+}
+
+#showbox {
+	color:white;
+	width:30%;
+	padding:10px;
+	margin-top:5px;
+	background-color:rgba(0,0,0,0.6);
+	border-radius:15px;
+}
+
+
+div.nums {
+	font-size:20px;
+	color:blue;
+	font-family:"sans-serif";
+}
+
+
+
+
+label
+{
+	background-color:#fff;
+}
+
+
+
+.small_select
+{
+	margin-top:1%;
+	width:68%;
+	height:50%;
+	float:left;	
+	text-align:left;
+	background-color:rgba(255, 255, 255, 0.5);
+}
+
+.small_dropDown
+{	
+	vertical-align:center;
+	text-align:center;
+	line-height:10px;
+	font-size:10px;
+}
+
+.longTextBox
+{
+	
+	width: 95%; 
+    min-height: 50px; 
+    max-height: 80px;
+    _height: 50px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 3px; 
+    outline: 0; 
+    border: 1px solid #a0b3d6; 
+    font-size: 12px; 
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+.longTextBox2
+{
+	
+	width: 100%; 
+    min-height: 30px; 
+    max-height: 350px;
+    _height: 50px;
+    margin-top: 10px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 3px; 
+    outline: 0; 
+    border: 1px solid #4f72b3; 
+    font-size: 12px; 
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+.func_content1
+/* 相关 */
+{
+	background-color:#EEE685;
+}
+
+.func_content2
+/* 高度相关 */
+{
+	background-color:#EEEE00;
+}

@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SYSU - 深度聚合学术搜索网站</title>
+<link href="/ui/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/ui/css/SearchResult.css" rel="stylesheet" type="text/css" />
+<link href="/ui/css/SearchFunction.css" rel="stylesheet" type="text/css" />
+<script src="/ui/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="/ui/js/setHomeSetFav.js" type="text/javascript" charset="gb2312"></script>
+
+
+
+<link href="/ui/css/chartStyle.css" rel="stylesheet" type="text/css" />
+<script src="/ui/js/d3.js" type="text/javascript"></script>
+<script src="/ui/js/d3.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<div class="top">
+	<div class="top_top">
+		<ul>
+        	<li><a href="#">联系我们</a></li>
+            <li><a href="#" onClick="AddFavorite(window.location,document.title)">加入收藏</a></li>
+        	<li><a href="#" onClick="SetHome(window.location)">设为首页</a></li>
+        </ul>
+    </div>
+    <div class="wrap">
+        <div class="logo">
+            <img src="/ui/images/logo.png" alt="ASIR"/>
+        </div>	<!--logo end-->
+		
+		<div class="TopSearch" style="margin-left:4%;">	
+            <form  action="/asir/searchResult" method="post">
+                <select style="margin-left:5%;" class="DropDown" name="searchType">
+					<option value ="title" selected="selected">标题</option>
+					<option value ="author">作者</option>
+					<option value="abstract">摘要</option>
+					<option value="keyword">关键词</option>
+					<option value="basic_info">基本信息</option>
+				</select>
+				<input name="searchWord" type="text" value="" class="TextBox"/>
+                <input style="margin-top:1%;" type="submit" value="检索" class="SearchButton" onClick="search();" />
+            </form>
+          <form style="position:absolute;margin-left:10%;margin-top:5%;" action="" method="get" class="search_radio" >
+                <input type="radio" name="sex" 
+                    value="male" /> 在结果中查找&nbsp;&nbsp;
+                <input type="radio" name="sex" 
+                    value="female" /> 普通查找
+            </form>
+        </div><!--search end-->
+        
+    </div>	<!--wrap end-->    
+</div>	<!--top end-->
+
+	
+	
+	
+	
+<div id="BackGround" style="height:1200px;">	
+	<div class="main">
+	<div class="main_left">
+        <div class="main_nav">
+            <div class="title">
+                <h2 class="title_left">Granularity</h2>
+                <span class="title_right">
+                    <a href="#">Cancel</a>
+                </span>
+            </div>
+            <div class="content">
+                <form action="" method="get" class="checkbox">
+                    <input type="checkbox" value="" />&nbsp;ALL <br>
+                    <input type="checkbox" 
+                        value="" />&nbsp;Knowledge Unit <br>
+                    <input type="checkbox" value="" />&nbsp;Paragraph<br>
+                    <input type="checkbox" value="" />&nbsp;Chapter<br>
+                    <input type="checkbox" value="" />&nbsp;Paper
+                </form> 
+            </div>
+        </div><!--main_nav end--> 
+        <div class="main_nav">
+            <div class="title">
+                <h2 class="title_left">Content</h2>
+                <span class="title_right">
+                    <a href="#">Cancel</a>
+                </span>
+            </div>
+            <div class="content">
+                <form action="" method="get" class="checkbox">
+                    <input type="checkbox" value="" />&nbsp;ALL <br>
+                    <input type="checkbox" 
+                        value="" />&nbsp;Define<br>
+                    <input type="checkbox" value="" />&nbsp;Chart<br>
+                    <input type="checkbox" value="" />&nbsp;Method<br>
+                    <input type="checkbox" value="" />&nbsp;Problem<br>
+                    <input type="checkbox" value="" />&nbsp;Deficiency<br>
+                    <input type="checkbox" value="" />&nbsp;Summary<br>
+                    <input type="checkbox" value="" />&nbsp;Opinion<br>
+                </form> 
+            </div>
+        </div><!--main_nav end--> 
+    </div><!--main_left end-->
+    <div class="main_middle">
+    	<div class="keywords" id="image">
+            <script src="/ui/js/canvas_bar_chart.js" type="text/javascript"></script>
+        </div> <!--keywords end-->
+    	<div class="results">
+        	<div class="a_result"><p>结果如下</p>
+            </div><!--a_result end-->
+            <div class="media_type" >
+					
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>dataList</title>
+</head>
+<body>
+<table style="BORDER-COLLAPSE: collapse" borderColor=#000000 height=40 cellPadding=1 width=100% align=center border=1>
+	<tr>
+	    <td>
+			<div class="aKTfPY mNryXI BqSzOU vOtHCo qnBwUj" id="3002" data-click="{"fm":"pp","p1":"3004","p5":"3004""rsv_srcid:49509"}">
+				<h3 class="t YAHqzu XvKLSb" >
+					<a class="YAHqzu" data-is-main-url="true" target="_blank" href="index.html">
+						<font color="#003399">国内人文社会科学文献老化规律对比研究——基于Web新形势下的研究</font>
+					</a>
+				</h3>
+				<div class="HtSQRe dULWGv">
+					<span>
+					    以CSSCI 2006—2008年间收录的所有专业期刊的共280,280篇来源文献的2,217,047条引文数据为样本,对比分析人文社会科学7大学科门类的老化规律;以引文分析共时法揭示了人文社会科学的整体老化现象。结果显示,历史学的老化并不严格遵循负指数函数;人文学科比社会学科文献老化慢很多;历史学和哲学对档案性文献的依赖性最强;人文社会科学各学科的普赖斯指数(P)*半衰期(H)=常数C,C在2.6左右波动;人文社会科学目前阶段的最大引文年限为3年。
+					</span>
+					<div class="op-medbaike-tips">
+						<a title="标题" target="_blank" href="index.html">标题</a>
+						<a title="作者" target="_blank" href="index.html">作者</a>
+						<a title="资源类型" target="_blank" href="index.html">资源类型</a>
+						<a title="来源" target="_blank" href="index.html">来源</a>
+						<a title="关键词" target="_blank" href="index.html">关键词</a>
+					</div>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td align="left">
+			<div class="aKTfPY mNryXI BqSzOU vOtHCo qnBwUj" id="3002" data-click="{"fm":"pp","p1":"3004","p5":"3004""rsv_srcid:49509"}">
+				<h3 class="t YAHqzu XvKLSb" >
+					<a class="YAHqzu" data-is-main-url="true" target="_blank" href="index.html">
+						<font color="#003399">基于F1000与WoS的同行评议与文献计量相关性研究</font>
+					</a>
+				</h3>
+				<div class="HtSQRe dULWGv">
+					<span>
+					   为比较同行评议与文献计量方法在科学评价中的有效性及相关性,选取F1000以及Web of Science数据库,采用SPSS16.0软件,将近2000篇论文的F1000因子与Web of Science数据库中指标进行相关性比较。结果显示,F1000因子与统计区间内的被引频次呈显著正相关,同时一些F1000因子很高的论文并没有高频被引,反之亦然。结论指出:从统计学的视角,文献计量指标与同行评议结果具有正向相关性,但是无论是同行评议还是文献计量,单独作为科学评价标准都会有失偏颇,以引文分析为代表的定量指标与同行评议方法的结合将是未来科学评价的主流。
+					</span>
+					<div class="op-medbaike-tips">
+						<a title="标题" target="_blank" href="index.html">标题</a>
+						<a title="作者" target="_blank" href="index.html">作者</a>
+						<a title="资源类型" target="_blank" href="index.html">资源类型</a>
+						<a title="来源" target="_blank" href="index.html">来源</a>
+						<a title="关键词" target="_blank" href="index.html">关键词</a>
+					</div>
+				</div>
+			</div>
+	</td>
+		</tr>
+	
+        	<tr>
+			<td align="left"><div class="aKTfPY mNryXI BqSzOU vOtHCo qnBwUj" id="3002" data-click="{"fm":"pp","p1":"3004","p5":"3004""rsv_srcid:49509"}">
+<h3 class="t YAHqzu XvKLSb" >
+<a class="YAHqzu" data-is-main-url="true" target="_blank" href="index.html">
+<font color="#003399">近五年来图书情报学研究热点与前沿的可视化分析——基于13种高影响力外文源刊的计量研究</font>
+</a>
+</h3>
+<div class="HtSQRe dULWGv">
+<span>
+  以SCI和SSCI收录的13种高影响力外文源刊在2006—2010年五年间所刊载的论文为研究对象,引入CiteSpaceII工具,并结合传统的文献计量方法,从高影响力作者、高频关键词以及突变专业术语三个方面,对国际范围内图书情报学领域的研究热点和前沿进行辨识和追踪。研究发现,近年来国际范围内的图书情报学呈现出计量、管理、技术三大研究维度,图书情报学定量化研究的趋势不断加强。在Glanzel、Leydesdorff、Egghe等国际知名计量学家的推动之下,图书情报学将以引文分析、h指数等主题为研究前沿,进入新一轮的繁荣阶段。与此同时,图书情报学的学科发展也将随之进入成熟期和完善期。 
+</span>
+<div class="op-medbaike-tips">
+<a title="标题" target="_blank" href="index.html">标题</a>
+<a title="作者" target="_blank" href="index.html">作者</a>
+<a title="资源类型" target="_blank" href="index.html">资源类型</a>
+<a title="来源" target="_blank" href="index.html">来源</a>
+<a title="关键词" target="_blank" href="index.html">关键词</a>
+</div>
+</div>
+</div></td>
+		</tr>
+       	<tr>
+			<td align="left"><div class="aKTfPY mNryXI BqSzOU vOtHCo qnBwUj" id="3002" data-click="{"fm":"pp","p1":"3004","p5":"3004""rsv_srcid:49509"}">
+<h3 class="t YAHqzu XvKLSb" >
+<a class="YAHqzu" data-is-main-url="true" target="_blank" href="index.html">
+<font color="#003399">图书情报学的国际研究态势：基于2000—2009年SSCI研究性论文的实证分析</font>
+</a>
+</h3>
+<div class="HtSQRe dULWGv">
+<span>
+   对2000—2009年SSCI收录的图书情报学研究性论文进行词频分析、引文分析等文献计量分析和描述统计分析。从年度、国家/地区、语种、研究机构、作者以及关键词分布等角度,结合相关文献,采用定量和定性的方法客观地揭示了近十年来国际上图书情报学研究的基本态势以及我国大陆地区图书情报学研究的国际地位。本研究的局限性在于偏向论文形式特征的分析,缺乏内容分析,且研究方法带有一定的主观性。 
+</span>
+<div class="op-medbaike-tips">
+<a title="标题" target="_blank" href="index.html">标题</a>
+<a title="作者" target="_blank" href="index.html">作者</a>
+<a title="资源类型" target="_blank" href="index.html">资源类型</a>
+<a title="来源" target="_blank" href="index.html">来源</a>
+<a title="关键词" target="_blank" href="index.html">关键词</a>
+</div>
+</div>
+</div></td>
+		</tr>
+
+      	<tr>
+			<td align="left"><div class="aKTfPY mNryXI BqSzOU vOtHCo qnBwUj" id="3002" data-click="{"fm":"pp","p1":"3004","p5":"3004""rsv_srcid:49509"}">
+<h3 class="t YAHqzu XvKLSb" >
+<a class="YAHqzu" data-is-main-url="true" target="_blank" href="index.html">
+<font color="#003399">国外网络引文研究的现状及展望</font>
+</a>
+</h3>
+<div class="HtSQRe dULWGv">
+<span>
+ 国外的网络引文研究可分为四个方面,侧重点各不相同:Print-Print引文研究着重于网络环境下传统引文数据库的分析;Print-Web引文研究大多集中在网络引文的可获得性方面;Web-Print引文研究注重实证与传统引文的比较;Web-Web引文研究则是将来引文发展的总趋向。网络引文数据的动态性和不可靠性、网络文献缺乏有效控制与规范,以及数据的精确性问题,都给引文分析带来一定困难。目前相关的研究还处于开创性和探索性阶段,未来的网络引文研究将重点从理论体系的构建、研究方法的完善与实践应用的深化三个层面展开。  
+</span>
+<div class="op-medbaike-tips">
+<a title="标题" target="_blank" href="index.html">标题</a>
+<a title="作者" target="_blank" href="index.html">作者</a>
+<a title="资源类型" target="_blank" href="index.html">资源类型</a>
+<a title="来源" target="_blank" href="index.html">来源</a>
+<a title="关键词" target="_blank" href="index.html">关键词</a>
+</div>
+</div>
+</div></td>
+		</tr>	
+		
+</table>
+<p>总共: 87条</p>
+
+
+
+
+
+ 
+
+
+
+
+
+	
+	
+		
+	
+	
+	
+		
+	
+	
+	<div class="pagination">
+		
+			
+		
+		
+		
+			
+		
+		
+		
+			
+				<span class="disabled prev_page">上页</span>
+			
+			
+		
+		
+		
+		
+		
+			
+				
+					<span class="current">1</span>
+				
+				
+			
+		
+			
+				
+				
+					<a href="/asir/2">2</a>
+				
+			
+		
+			
+				
+				
+					<a href="/asir/3">3</a>
+				
+			
+		
+			
+				
+				
+					<a href="/asir/4">4</a>
+				
+			
+		
+		
+		
+		
+		
+			
+			
+				<a href="/asir/2" class="next_page" rel="next">下页</a>
+			
+		
+	</div>
+
+</body>
+</html>
+            </div><!--media_type-->
+        </div> <!--results end-->
+    </div><!--main_middle-->
+	<div class="main_right">
+        <div class="main_nav">
+            <div class="title">
+                <h2 class="title_left">Media Type</h2>	
+            </div>
+            <div class="content">
+                <form action="" method="get" class="checkbox">
+                    <input type="checkbox" value="" />&nbsp;ALL <br>
+                    <input type="checkbox" 
+                        value="" />&nbsp;Pedia<br>
+                    <input type="checkbox" value="" />&nbsp;Blog<br>
+                    <input type="checkbox" value="" />&nbsp;Forum<br>
+                    <input type="checkbox" value="" />&nbsp;PPT<br>
+                    <input type="checkbox" value="" />&nbsp;Report<br>
+                    <input type="checkbox" value="" />&nbsp;Paper<br>
+                    <input type="checkbox" value="" />&nbsp;Photo<br>
+                </form> 
+            </div>
+        </div><!--main_nav end--> 
+        <div class="main_nav">
+            <div class="title">
+                <h2 class="title_left">Agency</h2>
+                <span class="title_right">
+                    <a href="#">ScatterDiagram</a>
+                </span>
+            </div>
+            <div class="content">
+                <form action="" method="get" class="checkbox">
+                    <input type="checkbox" value="" />&nbsp;ALL <br>
+                    <input type="checkbox" 
+                        value="" />&nbsp;Wuhan University<br>
+     				<input type="checkbox" 
+                        value="" />&nbsp;Peking University<br>
+                    <input type="checkbox" 
+                        value="" />&nbsp;Sun Yat-sen University<br>
+                    <input type="checkbox" 
+                        value="" />&nbsp;Nanjing University<br>
+                    <input type="checkbox" 
+                        value="" />&nbsp;Zhengzhou University<br>
+                    <br>
+                    <a href="#">More...</a>
+                </form> 
+            </div>
+        </div><!--main_nav end--> 
+        <div class="main_nav">
+            <div class="title">
+                <h2 class="title_left">Keywords</h2>
+                <span class="title_right">
+                    <a href="#">ScatterDiagram</a>
+                </span>
+            </div>
+            <div class="content">
+                <form action="" method="get" class="checkbox">
+                    <input type="checkbox" value="" />&nbsp;ALL <br>
+                    <input type="checkbox" 
+                        value="" />&nbsp;Digital Library Technology(87201)<br>
+     				<input type="checkbox" 
+                        value="" />&nbsp;Digital Resource(74569)<br>
+                    <input type="checkbox" 
+                        value="" />&nbsp;Digital Library Service(67310)<br>
+                </form> 
+            </div>
+        </div><!--main_nav end--> 
+    </div><!--main_right end-->
+</div><!--main end-->
+	
+	
+	
+</div>	
+	
+
+		
+		
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+<TABLE cellSpacing=6 cellPadding=0 width=100% border=0 class=border>
+  <TBODY>
+  <TR>
+    <TD>
+     <TABLE cellSpacing=12 cellPadding=0 width="100%" border=0 class=footer>
+       <TBODY>
+       <TR>
+	   
+        <TD align="center"><font color=white>Copyright &#169; 2011 中山大学资讯管理学院. All Rights Reserved.</font></TD>
+        </TR>
+        <TR>
+         <TD><a href=http://im.sysu.edu.cn/ target=_blank><b><font color=white>中山大学资讯管理学院</font></b></a><br>
+		   <font color=white>
+		   广州市广州大学城外环东路132号
+           电话：39332658
+           传真：39332658
+           邮件：imim@mail.sysu.edu.cn 
+		   </font>
+		   </TD>
+</TR></TBODY></TABLE></TD></TR>
+</TBODY></TABLE>
+		
+		
+		
+</body>
+</html>

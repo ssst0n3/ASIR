@@ -1,0 +1,31 @@
+﻿{
+  "nodes": [
+    {"atom": "数字图书馆", "size": 70},
+    {"atom": "图书馆", "size": 60},
+    {"atom": "信息资源", "size": 40},
+    {"atom": "数字建设", "size": 40},
+    {"atom": "图书馆建设", "size": 40},
+    {"atom": "数字资源", "size": 40},
+    {"atom": "数字化", "size": 30},
+    {"atom": "资源共享", "size": 30},
+    {"atom": "信息服务", "size": 30},
+    {"atom": "参考咨询", "size": 30},
+    {"atom": "数字化图书馆", "size": 20},
+    {"atom": "公共图书馆", "size": 20},
+    {"atom": "数字", "size": 20}
+  ],
+  "links": [
+    {"source": 0, "target": 1,  "bond": 1},
+    {"source": 0, "target": 2,  "bond": 1},
+    {"source": 0, "target": 3,  "bond": 1},
+    {"source": 0, "target": 4,  "bond": 4},
+    {"source": 0, "target": 5,  "bond": 1},
+    {"source": 0, "target": 6,  "bond": 1},
+    {"source": 0, "target": 7, "bond": 1},
+    {"source": 0, "target": 8, "bond": 1},
+    {"source": 0, "target": 9,  "bond": 1},
+    {"source": 0, "target": 10,  "bond": 1},
+    {"source": 0, "target": 11,  "bond": 1},
+    {"source": 0, "target": 12, "bond": 1}
+  ]
+}
