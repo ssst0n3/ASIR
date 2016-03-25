@@ -1,0 +1,151 @@
+/* bar style */
+			.bar { 
+							fill: #27408B;
+			}
+			.bar:hover {
+			  fill: brown;
+			}
+			
+			.baraxis {
+			  font: 10px sans-serif;
+			}
+
+			.baraxis path,
+			.baraxis line {
+			  fill: none;
+			  stroke: #000;
+			  shape-rendering: crispEdges;
+			}
+
+			.baraxis.x path {
+			  display: none;
+			}
+			
+			
+/* tooltip	 */		
+			#tooltip {
+				position: absolute;
+				width: 200px;
+				height: auto;
+				padding: 10px;
+				background-color: white;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				border-radius: 10px;
+				-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+				-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+				box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+				pointer-events: none;
+			}
+			
+			#tooltip.hidden {
+				display: none;
+			}
+			
+			#tooltip p {
+				margin: 0;
+				font-family: sans-serif;
+				font-size: 16px;
+				line-height: 20px;
+			}
+
+
+
+
+
+/* linear Style */
+
+.linearaxis path,
+.linearaxis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.linearaxis.x path {
+  display: none;
+}
+
+.linearline {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.linearoverlay {
+  fill: none;
+  pointer-events: all;
+}
+
+
+.linearfocus rect {
+	fill:none;
+	stroke: steelblue;
+}
+
+
+
+
+
+/* canvas bar chart */
+
+.canaxis path,
+.canaxis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.canaxis.x path {
+  display: none;
+}
+
+.canline {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.canoverlay {
+  fill: none;
+  pointer-events: all;
+}
+
+
+.canfocus rect {
+	fill:none;
+	stroke: steelblue;
+}
+
+
+/* pie chart style */
+.piearc path {
+		stroke: #fff;
+		stroke-width: 1.5px;
+		transition: fill 250ms linear;
+	    transition-delay: 150ms;
+}
+			
+.piearc path:hover{
+	opacity:0.8;
+}
+
+/*star chart style*/
+    .starlink line {  
+      stroke: #696969;  
+    }  
+    /* 分隔线的格式 透明的 */  
+    .starlink line.separator {  
+      stroke: #fff;  
+      stroke-width: 2px;  
+    }  
+      
+    .starnode circle {  
+      stroke: #000;  
+      stroke-width: 1.5px;  
+    }  
+      
+    .starnode text {  
+      font: 18px sans-serif;  
+      pointer-events: none;  
+    }  
