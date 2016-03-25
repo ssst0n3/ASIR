@@ -1,5 +1,0 @@
-jdbcUrl = jdbc:mysql://127.0.0.1/asir?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
-
-user = root
-password =
-devMode = true
