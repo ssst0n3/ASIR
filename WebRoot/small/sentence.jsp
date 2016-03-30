@@ -26,6 +26,7 @@
 <script src="/ui/js/setHomeSetFav.js" type="text/javascript" charset="gb2312"></script>
 <script src="/ui/js/d3.min.js" type="text/javascript"></script>
 <script src="/ui/js/highlight.js"></script>
+<script src="/ui/js/jquery-1.11.3.min.js"></script>
 </head>
 
 <body>

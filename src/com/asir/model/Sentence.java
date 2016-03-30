@@ -237,11 +237,10 @@ public class Sentence extends Model<Sentence> {
 /*		for(Record s1:list){
 			System.out.println(s1.get("id") + " " + s1.get("cid") + " " + s1.get("weight"));
 		}*/
-	
+		
 		//下面实现按照weight倒序排列
 		ListSort<Record> listSort = new ListSort<Record>();
 		listSort.Sort(list, "get", "weight", "desc");
-		
 		//pageinate
 		long totalRow = 0;
 		int totalPage = 0;

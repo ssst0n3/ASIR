@@ -33877,3 +33877,112 @@ Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A Resourc
 	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
 	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
 	... 22 more
+
+2016-03-30 10:00:43
+[ERROR]-[Thread: qtp1942406066-21]-[com.jfinal.core.ActionHandler.handle()]: /small/sentence
+com.jfinal.render.RenderException: org.apache.jasper.JasperException: PWC6033: Error in Javac compilation for JSP
+
+PWC6199: Generated servlet error:
+源值1.5已过时, 将在未来所有发行版中删除
+
+PWC6199: Generated servlet error:
+目标值1.5已过时, 将在未来所有发行版中删除
+
+PWC6199: Generated servlet error:
+要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+
+PWC6197: An error occurred at line: 114 in the jsp file: /small/aggregate_sen.jsp
+PWC6199: Generated servlet error:
+不是语句
+
+PWC6197: An error occurred at line: 114 in the jsp file: /small/aggregate_sen.jsp
+PWC6199: Generated servlet error:
+需要';'
+
+PWC6197: An error occurred at line: 114 in the jsp file: /small/aggregate_sen.jsp
+PWC6199: Generated servlet error:
+不是语句
+
+PWC6197: An error occurred at line: 114 in the jsp file: /small/aggregate_sen.jsp
+PWC6199: Generated servlet error:
+需要';'
+
+
+	at com.jfinal.render.JspRender.render(JspRender.java:69)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:93)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:47)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.jasper.JasperException: PWC6033: Error in Javac compilation for JSP
+
+PWC6199: Generated servlet error:
+源值1.5已过时, 将在未来所有发行版中删除
+
+PWC6199: Generated servlet error:
+目标值1.5已过时, 将在未来所有发行版中删除
+
+PWC6199: Generated servlet error:
+要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+
+PWC6197: An error occurred at line: 114 in the jsp file: /small/aggregate_sen.jsp
+PWC6199: Generated servlet error:
+不是语句
+
+PWC6197: An error occurred at line: 114 in the jsp file: /small/aggregate_sen.jsp
+PWC6199: Generated servlet error:
+需要';'
+
+PWC6197: An error occurred at line: 114 in the jsp file: /small/aggregate_sen.jsp
+PWC6199: Generated servlet error:
+不是语句
+
+PWC6197: An error occurred at line: 114 in the jsp file: /small/aggregate_sen.jsp
+PWC6199: Generated servlet error:
+需要';'
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:129)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:299)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:453)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:625)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:374)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:578)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103)
+	at com.jfinal.render.JspRender.render(JspRender.java:67)
+	... 26 more
