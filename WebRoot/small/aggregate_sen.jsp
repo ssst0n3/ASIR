@@ -60,7 +60,7 @@
 			<div id="${100000+obj.id}" style="display:none;">${obj.存放路径}</div>
 			<c:set var="id" value="${obj.id}"/>
 			<c:set var="abstract_last" value="${obj.abstract}"/>
-			<c:set var="cid" value="JUST_FOR_DIFF"/>
+			<c:set var="cid" value="66666"/>
 			<div class="zhaiyao">
 			<!-- div zhaiyao 结束在div the_result 结束前 -->
 		<!-- div the_result 的结束在新结果之前 -->
