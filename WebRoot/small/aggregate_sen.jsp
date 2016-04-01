@@ -13,10 +13,25 @@
 		document.getElementById(id1+10000).innerHTML = document.getElementById(id2+20000).innerHTML;
 	}
 	function CONTENT(id){
-	 	str1 = document.getElementById(id+100000).innerHTML;
-	 	str2 = str1.replace(new RegExp("  ",'gm'),"&nbsp;")
-	 			   .replace(new RegExp("<",'gm'),"&lt;")
-	 			   .replace(new RegExp(">",'gm'),"&gt;")
+		var contentId = id+100000;
+	 	var str1 = $("#"+contentId);
+	 	var content1 = $("#the_result_" +id+ " .component .func_content1:hidden");
+	 	var content2 = $("#the_result_" +id+ " .component .func_content2:hidden");
+	 	
+	 	content1.each(function(){
+		 	var trim = $.trim($(this).html());
+		 	str1.html(str1.html().replace(trim, '<span class="func_content1">'+trim+'</span>'));	 		
+	 	});
+
+	 	content2.each(function(){
+		 	var trim = $.trim($(this).html());
+		 	str1.html(str1.html().replace(trim, '<span class="func_content2">'+trim+'</span>'));	 		
+	 	});
+	 	
+	 	
+	 	str2 = str1.html().replace(new RegExp("  ",'gm'),"&nbsp;")
+/* 	 			   .replace(new RegExp("<",'gm'),"&lt;")
+	 			   .replace(new RegExp(">",'gm'),"&gt;") */
 	 			   .replace(new RegExp("\n",'gm'),"<br><br>");
 	 	document.getElementById(id+10000).innerHTML = str2;
 	}
