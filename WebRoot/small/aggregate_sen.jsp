@@ -101,7 +101,7 @@
 			<script>fidAddToCid(${obj.cid},${obj.fid})</script>
 		</c:if> <!-- 判断是否是重复的component -->
 	</c:if><!-- 判断是否是重复的title -->
-
+	
    	<!-- 判断是否是最后一个结果 -->
 	<c:if test="${status.last}">
 		</div><!-- div zhaiyao end -->
