@@ -45,8 +45,9 @@
 	        </a>	<!--logo end-->
 			<div class="small_tag">
  				<a class="button button--tag" href="${contextPath}/small/chapter">普通检索</a>
-		        <a class="button button--select" onClick="form1.action='${contextPath}/small/sentence'; form1.submit();">聚合单元检索</a>
-			</div>
+ 				<a class="button button--select" href="${contextPath}/small/sentence">聚合单元检索</a>
+<%-- 		        <a class="button button--select" onClick="form1.action='${contextPath}/small/sentence'; form1.submit();">聚合单元检索</a>
+ --%>			</div>
 			
 		<div id="InputBox">
 			<div id="textframe">

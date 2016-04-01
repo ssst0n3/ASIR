@@ -23,11 +23,14 @@ public class SmallController extends Controller {
 		render("inf.jsp");
 	}
 	public void sentence(){
+		String mediaType = getPara("mediaType","all");
+		String searchWord = getPara("searchWord","");
+		String searchType = getPara("searchType","跟进了解");
+		
 		setAttr("objectlist", Sentence.dao.senpaginate3(getParaToInt("page", 1), 5 
-				, getPara("mediaType", "all"), getPara("searchWord", "")
-				, getPara("searchType","跟进了解")));
-		setAttr("searchType", getPara("searchType"));
-		setAttr("searchWord", getPara("searchWord"));
+				, mediaType, searchWord, mediaType));
+		setAttr("searchType", searchType);
+		setAttr("searchWord", searchWord);
 		render("sentence.jsp");
 	}
 	public void test(){
